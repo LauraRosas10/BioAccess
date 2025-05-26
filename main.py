@@ -1,15 +1,15 @@
-# /home/pi/proyecto_asistencia_consola/main_consola.py
+
 import os
 import time
 import requests
 from datetime import datetime
 import subprocess
 
-import db_manager_consola as db
-import hardware_manager as hw # Usaremos las funciones actualizadas de hw
+import dbmanager as db
+import hardwaremanager as hw # Usaremos las funciones actualizadas de hw
 
 # --- Configuración ---
-IP_WEBCAM_URL = "http://192.168.1.2:8080/shot.jpg" # ¡¡¡CAMBIA ESTO!!!
+IP_WEBCAM_URL = "http://10.14.58.230:8080/shot.jpg" # ¡¡¡CAMBIA ESTO!!!
 PHOTOS_SAVE_DIR = db.PHOTOS_DIR_RELATIVE_TO_SCRIPT
 TIEMPO_PUERTA_ABIERTA = 5 # Segundos que el servo permanecerá abierto
 
@@ -181,3 +181,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
