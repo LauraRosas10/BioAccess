@@ -9,7 +9,7 @@ LCD_ROWS = 2
 
 # --- Ciclos de Trabajo para el Servo (AJUSTA PARA TU SERVO ESPECÍFICO) ---
 # Estos valores son típicos para un SG90 a 50Hz. ¡CALIBRA LOS TUYOS!
-DUTY_CYCLE_CERRADO = 2.5  # Para 0 grados
+DUTY_CYCLE_CERRADO = 3  # Para 0 grados
 DUTY_CYCLE_ABIERTO = 7.5  # Para 90 grados (o la posición de "abierto" que desees)
 
 # --- Importaciones de Librerías de Hardware ---
